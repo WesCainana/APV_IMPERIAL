@@ -2,17 +2,18 @@
  * ============================================================================
  * PAINEL DE CONFIGURAÇÃO RÁPIDA — ESCOLA DE SALGADOS (MÉTODO APV)
  * ============================================================================
- * Edite apenas os valores abaixo para conectar seu WhatsApp, Kiwify, VSL e Pixel.
  */
 const CONFIG_SITE = {
-    // 1. LINK DE CHECKOUT (Por hora WhatsApp; depois basta colar o link da Kiwify)
-    checkoutUrl: "https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20no%20M%C3%A9todo%20APV%20da%20Escola%20de%20Salgados!",
+    // 1. LINK DE CHECKOUT DA HOTMART (Substitua pelo link oficial do seu produto na Hotmart)
+    checkoutUrl: "https://pay.hotmart.com/SEU_CODIGO_DE_CHECKOUT?checkoutMode=10",
 
-    // 2. LINK EMBED DA VSL (Cole a URL de incorporação do YouTube, Vimeo ou Panda Video)
-    // Exemplo YouTube: "https://www.youtube.com/embed/SEU_VIDEO_ID?autoplay=1&rel=0"
-    vslEmbedUrl: "midia/sal.mp4?autoplay=1&rel=0",
+    // 2. LINK EMBED DA VSL 
+    // Opção A (YouTube): "https://www.youtube.com/embed/SEU_VIDEO_ID?autoplay=1&rel=0"
+    // Opção B (Hotmart): "https://player.hotmart.com/embed/SEU_ID_DO_VIDEO?autoplay=1"
+    //vslEmbedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0",
+    vslEmbedUrl: "midia/sal.mp4",
 
-    // 3. ID DO PIXEL DA META (Ex: "123456789012345" — deixe "" enquanto não ativar)
+    // 3. ID DO PIXEL DA META (Facebook Ads) — Insira seu ID real para rastrear conversões
     metaPixelId: "",
 
     // 4. VALOR DO PRODUTO PARA RASTREAMENTO
@@ -46,7 +47,7 @@ $(document).ready(function () {
     // Atualiza ano automático no rodapé
     $("#currentYear").text(new Date().getFullYear());
 
-    // Preserva parâmetros UTM da URL atual para repassar ao checkout (Kiwify/WhatsApp)
+    // Preserva parâmetros UTM da URL (essencial para rastrear anúncios do Instagram/Facebook)
     function buildCheckoutUrlWithUtms(baseUrl) {
         const currentParams = window.location.search;
         if (!currentParams) return baseUrl;
@@ -62,7 +63,7 @@ $(document).ready(function () {
     $(".btn-checkout").on("click", function () {
         const buttonOrigin = $(this).data("origin") || "botao-pagina";
 
-        // Dispara evento padrão do Meta Pixel
+        // Dispara rastreamento de intenção de compra no Meta Pixel
         if (typeof fbq === "function") {
             fbq('track', 'InitiateCheckout', {
                 content_name: 'Método APV - Escola de Salgados',
@@ -74,7 +75,7 @@ $(document).ready(function () {
         }
     });
 
-    // Player da VSL sob demanda (carrega iframe apenas ao clicar para manter velocidade)
+    // Player da VSL sob demanda (carrega o iframe apenas ao clicar no play para poupar banda)
     $("#btnPlayVsl, #vslCover").on("click", function () {
         const $cover = $("#vslCover");
         const $target = $("#vslEmbedTarget");
@@ -91,7 +92,7 @@ $(document).ready(function () {
         $target.html(iframeHtml).removeClass("d-none");
         $cover.fadeOut(250);
 
-        // Evento personalizado de visualização da VSL no Pixel
+        // Evento customizado para medir quem assistiu à VSL via anúncios
         if (typeof fbq === "function") {
             fbq('trackCustom', 'PlayVSL', {
                 content_name: 'VSL Método APV'
@@ -99,7 +100,7 @@ $(document).ready(function () {
         }
     });
 
-    // Fecha menu mobile automaticamente ao clicar em um link de navegação
+    // Fecha menu mobile ao navegar
     $(".navbar-nav .nav-link").on("click", function () {
         const $navbarCollapse = $("#navbarNav");
         if ($navbarCollapse.hasClass("show")) {
