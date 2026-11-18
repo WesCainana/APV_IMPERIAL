@@ -5,7 +5,8 @@
  */
 const CONFIG_SITE = {
     // 1. LINK DE CHECKOUT DA HOTMART (Substitua pelo link oficial do seu produto na Hotmart)
-    checkoutUrl: "https://pay.hotmart.com/SEU_CODIGO_DE_CHECKOUT?checkoutMode=10",
+    // Exemplo: "https://pay.hotmart.com/SEU_CODIGO_DE_CHECKOUT?checkoutMode=10"
+    checkoutUrl: "https://wa.me/5575981998202?text=Olá, gostaria de mais informações sobre o Método APV.",
 
     // 2. LINK EMBED DA VSL 
     // Opção A (YouTube): "https://www.youtube.com/embed/SEU_VIDEO_ID?autoplay=1&rel=0"
