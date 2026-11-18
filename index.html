@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola de Salgados | Método APV — Aprenda. Produza. Venda.</title>
+    <meta name="description" content="Aprenda a fazer salgados e descubra como transformar essa habilidade em um negócio lucrativo com o Método APV.">
+
+    <!-- Google Fonts: Montserrat e Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                <i class="bi bi-award-fill text-gold fs-3"></i>
+                <div class="lh-1">
+                    <span class="fw-black text-white d-block fs-5">ESCOLA DE SALGADOS</span>
+                    <small class="text-gold fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">MÉTODO APV</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3 my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#metodo-apv">O Método APV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bonus">Bônus Caixa Rápido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#instrutor">Instrutor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#oferta" class="btn btn-gold btn-sm px-3 py-2 rounded-pill">Quero Começar Agora <i class="bi bi-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO 1 — APRESENTAÇÃO E VSL -->
+    <header id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-9">
+                    <span class="badge-gold">MÉTODO APV • APRENDA. PRODUZA. VENDA.</span>
+                    
+                    <h1 class="hero-title">
+                        APRENDA A FAZER SALGADOS E DESCUBRA COMO TRANSFORMAR ESSA HABILIDADE EM UM <span class="text-gold">NEGÓCIO!</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle mx-auto">
+                        Aprenda técnicas de produção, padronização e comercialização de salgados e conheça um método prático para começar a conquistar seus primeiros clientes.
+                    </p>
+
+                    <!-- CONTAINER DA VSL -->
+                    <div class="vsl-wrapper mx-auto">
+                        <div class="vsl-container" id="vslPlayerBox">
+                            <!-- Capa interativa antes do play -->
+                            <div class="vsl-placeholder" id="vslCover">
+                                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80" alt="Salgados Dourados Escola de Salgados" class="vsl-bg-img">
+                                <div class="vsl-overlay">
+                                    <button type="button" class="btn-play-vsl" id="btnPlayVsl" aria-label="Assistir apresentação">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                    <p class="vsl-caption mb-0">
+                                        <i class="bi bi-volume-up-fill text-gold me-1"></i> Clique para assistir à apresentação completa
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- O iframe do YouTube/Vimeo/Panda será injetado aqui via script.js -->
+                            <div id="vslEmbedTarget" class="w-100 h-100 d-none"></div>
+                        </div>
+                    </div>
+
+                    <!-- BOTÃO PRINCIPAL DE AÇÃO -->
+                    <div class="mt-4 pt-2">
+                        <a href="#" class="btn btn-gold btn-cta-pulse btn-checkout" data-origin="hero-vsl">
+                            QUERO COMEÇAR AGORA <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+                        </a>
+                        <div class="trust-badges-hero mt-3">
+                            <span><i class="bi bi-shield-lock-fill text-gold"></i> Compra 100% Segura</span>
+                            <span><i class="bi bi-lightning-charge-fill text-gold"></i> Acesso Imediato</span>
+                            <span><i class="bi bi-patch-check-fill text-gold"></i> Método Validado na Prática</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE DESTAQUES RÁPIDOS -->
+    <section class="highlights-bar">
+        <div class="container">
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                        <i class="bi bi-house-heart-fill"></i>
+                        <span>Comece na sua cozinha</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <span>Estratégias reais de vendas</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                        <i class="bi bi-lightning-fill"></i>
+                        <span>Bônus Método Caixa Rápido</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                        <i class="bi bi-award-fill"></i>
+                        <span>Suporte e orientação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2 — APRESENTAÇÃO DO MÉTODO APV -->
+    <section id="metodo-apv" class="section-padding bg-cream">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag">O PASSO A PASSO ESTRUTURADO</span>
+                <h2 class="section-title text-wine">
+                    CONHEÇA O <span class="highlight-underline">MÉTODO APV</span>: APRENDA, PRODUZA E VENDA.
+                </h2>
+                <p class="section-desc mx-auto">
+                    Três pilares fundamentais para você dominar desde a receita perfeita até o lucro no seu bolso.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- PILAR 1 -->
+                <div class="col-md-4">
+                    <div class="apv-card">
+                        <div class="apv-step-number">01</div>
+                        <div class="apv-icon">
+                            <i class="bi bi-book-half"></i>
+                        </div>
+                        <h3>APRENDA</h3>
+                        <p>
+                            Conheça as técnicas de preparação de massas, recheios e receitas de salgados com sabor irresistível e textura profissional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PILAR 2 -->
+                <div class="col-md-4">
+                    <div class="apv-card apv-card-featured">
+                        <div class="apv-step-number">02</div>
+                        <div class="apv-icon">
+                            <i class="bi bi-sliders2-vertical"></i>
+                        </div>
+                        <h3>PRODUZA</h3>
+                        <p>
+                            Aprenda modelagem, pesagem, padronização, fritura, congelamento e armazenamento para produzir com agilidade e zero desperdício.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PILAR 3 -->
+                <div class="col-md-4">
+                    <div class="apv-card">
+                        <div class="apv-step-number">03</div>
+                        <div class="apv-icon">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h3>VENDA</h3>
+                        <p>
+                            Aprenda a calcular seus custos, definir preços lucrativos e dar os primeiros passos para comercializar seus produtos todos os dias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3 — BÔNUS ESPECIAL -->
+    <section id="bonus" class="section-padding bg-wine-pattern text-white">
+        <div class="container">
+            <div class="bonus-box">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <span class="badge-gold mb-3"><i class="bi bi-gift-fill me-1"></i> BÔNUS EXCLUSIVO INCLUSO</span>
+                        <h2 class="bonus-title">
+                            E TEM MAIS: VOCÊ TAMBÉM VAI RECEBER O <span class="text-gold">MÉTODO CAIXA RÁPIDO!</span>
+                        </h2>
+                        <p class="bonus-lead">
+                            Um método baseado na minha experiência prática no mercado de salgados, criado para ensinar como identificar oportunidades comerciais, pesquisar o mercado, abordar estabelecimentos e conquistar os primeiros clientes.
+                        </p>
+                        
+                        <div class="row g-2 mt-3">
+                            <div class="col-sm-6">
+                                <ul class="bonus-list">
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Pesquisa de mercado</li>
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Análise da concorrência</li>
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Precificação estratégica</li>
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Prospecção de estabelecimentos</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="bonus-list">
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Script de abordagem comercial</li>
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Estratégia dos 10 salgados para experimentação</li>
+                                    <li><i class="bi bi-check-circle-fill text-gold"></i> Negociação e construção de clientes recorrentes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bonus-free-tag mt-4">
+                            <i class="bi bi-stars text-gold me-2"></i>
+                            Esse bônus estará <strong>incluído no treinamento, sem cobrança adicional</strong>.
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 text-center">
+                        <div class="bonus-visual-card">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80" alt="Porção de Salgados Fritos" class="img-fluid rounded-4 mb-3">
+                            <div class="plan-card-overlay">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fw-bold text-wine">Plano de Ação Comercial</span>
+                                    <span class="badge bg-success">GRÁTIS HOJE</span>
+                                </div>
+                                <div class="small text-start text-dark">
+                                    <div><i class="bi bi-check2-square text-success me-1"></i> Produzir com padrão</div>
+                                    <div><i class="bi bi-check2-square text-success me-1"></i> Aplicar amostra dos 10 salgados</div>
+                                    <div><i class="bi bi-check2-square text-success me-1"></i> Fechar pedidos recorrentes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4 — PARA QUEM É O TREINAMENTO? -->
+    <section id="para-quem" class="section-padding bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <span class="section-tag">IDENTIFICAÇÃO</span>
+                    <h2 class="section-title text-wine">PARA QUEM É O TREINAMENTO?</h2>
+                    <p class="section-desc">O Método APV foi desenhado para atender tanto quem está começando do zero quanto quem busca profissionalizar sua produção.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="target-list">
+                        <div class="target-item">
+                            <div class="target-icon"><i class="bi bi-check-lg"></i></div>
+                            <p class="mb-0">Pessoas que desejam <strong>começar a trabalhar com salgados em casa</strong>.</p>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon"><i class="bi bi-check-lg"></i></div>
+                            <p class="mb-0"><strong>Iniciantes</strong> que querem aprender técnicas corretas de produção.</p>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon"><i class="bi bi-check-lg"></i></div>
+                            <p class="mb-0">Pessoas que já produzem salgados e desejam <strong>melhorar sua padronização</strong>.</p>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon"><i class="bi bi-check-lg"></i></div>
+                            <p class="mb-0">Quem deseja aprender a <strong>precificar e comercializar</strong> seus produtos com lucro.</p>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon"><i class="bi bi-check-lg"></i></div>
+                            <p class="mb-0">Quem busca desenvolver uma <strong>pequena operação de fornecimento para comércios locais</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5 — APRESENTAÇÃO DO INSTRUTOR -->
+    <section id="instrutor" class="section-padding bg-cream">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <div class="instructor-frame">
+                        <!-- SUBSTITUA O SRC ABAIXO PELA SUA FOTOGRAFIA OFICIAL -->
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Instrutor Escola de Salgados" class="instructor-photo" id="fotoInstrutor">
+                        <div class="instructor-badge">
+                            <i class="bi bi-award-fill text-gold me-1"></i> Escola de Salgados
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <span class="section-tag">SEU MENTOR NESSA JORNADA</span>
+                    <h2 class="section-title text-wine mb-4">
+                        APRENDA COM QUEM VIVE O MERCADO DE SALGADOS NA PRÁTICA.
+                    </h2>
+                    <p class="instructor-text">
+                        Minha experiência foi construída na prática, trabalhando diariamente com produção, padronização e comercialização de salgados.
+                    </p>
+                    <p class="instructor-text">
+                        Neste treinamento, compartilho conhecimentos e estratégias que utilizo no mercado real, para ajudar outras pessoas a desenvolverem seu próprio negócio com segurança, técnica e visão comercial.
+                    </p>
+
+                    <div class="row g-3 mt-3">
+                        <div class="col-sm-6">
+                            <div class="instructor-stat">
+                                <i class="bi bi-check2-circle text-wine fs-4"></i>
+                                <span>Vivência diária de produção</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="instructor-stat">
+                                <i class="bi bi-check2-circle text-wine fs-4"></i>
+                                <span>Foco total em vendas reais</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 6 — OFERTA -->
+    <section id="oferta" class="section-padding bg-wine-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="offer-card text-center">
+                        <span class="badge-gold mb-3">OPORTUNIDADE ÚNICA</span>
+                        <h2 class="offer-title">
+                            CHEGOU A HORA DE COLOCAR SEU PROJETO EM PRÁTICA!
+                        </h2>
+                        <p class="text-muted mb-4">Garanta sua vaga agora e tenha acesso completo ao passo a passo:</p>
+
+                        <ul class="offer-checklist text-start mx-auto">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> <strong>Treinamento Método APV</strong> completo</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Formação prática em <strong>produção de salgados</strong></li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Técnicas de <strong>padronização e conservação</strong></li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Estratégias de <strong>comercialização e vendas</strong></li>
+                            <li class="bonus-highlight-item"><i class="bi bi-gift-fill text-wine"></i> <strong>Bônus Exclusivo:</strong> Método Caixa Rápido</li>
+                        </ul>
+
+                        <div class="price-box my-4">
+                            <span class="price-label d-block">INVESTIMENTO ÚNICO:</span>
+                            <div class="price-value">
+                                <span class="currency">R$</span> 197<span class="cents">,00</span>
+                            </div>
+                            <span class="price-subtext">ou parcelado no cartão diretamente no checkout</span>
+                        </div>
+
+                        <a href="#" class="btn btn-gold btn-cta-pulse w-100 py-3 fs-5 btn-checkout" data-origin="secao-oferta">
+                            QUERO ACESSAR O MÉTODO APV <i class="bi bi-lock-fill ms-2"></i>
+                        </a>
+
+                        <div class="payment-security mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-shield-check text-success me-1"></i> Ambiente seguro • Acesso enviado imediatamente após a confirmação
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7 — GARANTIA E DÚVIDAS -->
+    <section id="duvidas" class="section-padding bg-white">
+        <div class="container">
+            <!-- BLOCO DE GARANTIA -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-9">
+                    <div class="guarantee-box">
+                        <div class="row align-items-center g-4 text-center text-md-start">
+                            <div class="col-md-3 text-center">
+                                <div class="guarantee-seal">
+                                    <i class="bi bi-shield-fill-check"></i>
+                                    <span>GARANTIA</span>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="text-wine fw-bold mb-2">Garantia Incondicional e Acesso Seguro</h3>
+                                <p class="text-muted mb-0">
+                                    <em>[Espaço reservado para inserir as condições oficiais de garantia (ex: 7 dias de garantia incondicional) e detalhes da plataforma de alunos assim que definidos.]</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERGUNTAS FREQUENTES (FAQ) -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4">
+                        <span class="section-tag">TIRE SUAS DÚVIDAS</span>
+                        <h2 class="section-title text-wine">PERGUNTAS FREQUENTES</h2>
+                    </div>
+
+                    <div class="accordion accordion-custom" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Como recebo o acesso ao Método APV?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Assim que sua inscrição for confirmada, você receberá os dados de acesso diretamente no seu e-mail cadastrado. <em>(Ajustar detalhes finais da área de membros conforme definição).</em>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Preciso de equipamentos caros para começar?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Não! O método foi estruturado para que você consiga iniciar na cozinha da sua casa, utilizando utensílios simples e escalando conforme conquistar seus primeiros clientes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    O bônus Método Caixa Rápido já está incluso no valor de R$ 197,00?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! Ao garantir sua vaga hoje, você recebe o treinamento completo Método APV e o bônus Método Caixa Rápido sem nenhuma cobrança adicional.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    [Espaço para dúvida adicional] Como funciona o suporte aos alunos?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Espaço reservado para inserir os canais e horários de atendimento e suporte ao aluno após definição final.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8 — RODAPÉ -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <div class="mb-3">
+                <i class="bi bi-award-fill text-gold fs-2"></i>
+                <h4 class="text-white fw-bold mt-2 mb-1">Escola de Salgados</h4>
+                <p class="text-gold fw-semibold mb-0">Método APV — Aprenda. Produza. Venda.</p>
+            </div>
+
+            <div class="footer-links my-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Política de Privacidade</a>
+                <span class="mx-2 text-white-50">•</span>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalTermos">Termos de Uso</a>
+                <span class="mx-2 text-white-50">•</span>
+                <a href="#" class="btn-checkout" data-origin="rodape-suporte">Contato e Suporte</a>
+            </div>
+
+            <p class="small text-white-50 mb-0">
+                &copy; <span id="currentYear"></span> Escola de Salgados. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP / SUPORTE -->
+    <a href="#" class="floating-support-btn btn-checkout" data-origin="botao-flutuante" title="Falar com o Suporte / Garantir Vaga">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- MODAL POLÍTICA DE PRIVACIDADE -->
+    <div class="modal fade" id="modalPrivacidade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-wine-dark text-white">
+                    <h5 class="modal-title">Política de Privacidade</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body small text-muted">
+                    <p>A <strong>Escola de Salgados</strong> respeita a sua privacidade e protege os seus dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD).</p>
+                    <p>As informações coletadas durante sua navegação (como cookies e pixels de rastreamento) são utilizadas exclusivamente para melhorar sua experiência e processar sua inscrição com segurança.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL TERMOS DE USO -->
+    <div class="modal fade" id="modalTermos" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-wine-dark text-white">
+                    <h5 class="modal-title">Termos de Uso</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body small text-muted">
+                    <p>O conteúdo do treinamento <strong>Método APV</strong> e do bônus <strong>Método Caixa Rápido</strong> é de uso individual e intransferível, protegido por direitos autorais da Escola de Salgados.</p>
+                    <p>Os resultados financeiros dependem da aplicação prática e dedicação de cada aluno.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
